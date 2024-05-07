@@ -19,7 +19,7 @@ const getAsync = promisify(client.get).bind(client);
 
 const displaySchoolValue = async (schoolName) => {
 	const value = await getAsync(schoolName);
-    console.log(reply);
+    console.log(value);
 }
 
 displaySchoolValue('Holberton');
